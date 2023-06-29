@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const dir = String(process.env.BRANCH_NAME)
+const dir = process.env.BRANCH_NAME ? "/" + process.env.BRANCH_NAME : ""
 
 export default function Home() {
   return (
