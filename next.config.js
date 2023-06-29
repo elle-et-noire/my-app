@@ -5,7 +5,11 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   assetPrefix: branchName,
-  basePath: branchName
+  basePath: branchName,
+  images: {
+    loader: 'imgix',
+    path: branchName
+  }
 }
 
 module.exports = nextConfig
