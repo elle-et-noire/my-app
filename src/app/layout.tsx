@@ -1,5 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+
+const applimincho = localFont({
+  src: './AppliMincho.otf',
+  display: 'swap'
+})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={applimincho.className}>{children}</body>
     </html>
   )
 }
